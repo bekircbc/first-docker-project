@@ -34,3 +34,16 @@
         docker start
         docker restart
         docker version
+
+## Create Dockerfile
+
+- create docker file
+
+                FROM node:alpine
+                COPY . /app
+                WORKDIR /app
+                CMD node app.js
+
+- add app to docker
+
+                docker build -t first-docker-project .
